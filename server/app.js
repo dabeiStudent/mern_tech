@@ -3,9 +3,12 @@ const express = require('express');
 const connectDB = require('./config/db');
 const router = require('./api/books');
 const app = express();
+const cors = require('cors');
 const bodyParser = require('body-parser')
 const server = require('http').createServer(app);
 //////////////////////////////////////////////////
+// cors
+app.use(cors({ origin: true, credentials: true }));
 connectDB();
 //book_seeder
 //const seedbooks = require('./seeder/seedbooks');

@@ -15,13 +15,13 @@ book2.save();
 const book3 = new Book({
     title: "Sach thu 3",
     isbn: "700000",
-    author: "Quang Duong"
+    author: "Duy Lan"
 })
 book3.save();
 const book4 = new Book({
     title: "Sach thu 4",
     isbn: "3700000",
-    author: "Duy Nguyen"
+    author: "Vinh Thien"
 })
 book4.save();
 
